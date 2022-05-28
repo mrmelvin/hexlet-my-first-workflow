@@ -7,8 +7,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      - name: Saying Hello
         run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: make say-hello
+          make say-hello
