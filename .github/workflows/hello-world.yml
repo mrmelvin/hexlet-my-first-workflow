@@ -8,5 +8,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: say hello
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: make say-hello
